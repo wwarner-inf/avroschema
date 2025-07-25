@@ -1,8 +1,8 @@
 # Go Avro Schema Reflection
 
-[![workflow](https://github.com/wirelessr/avroschema/actions/workflows/go.yml/badge.svg)](https://github.com/wirelessr/avroschema/actions/workflows/go.yml)
-[![Lint](https://github.com/wirelessr/avroschema/actions/workflows/lint.yml/badge.svg)](https://github.com/wirelessr/avroschema/actions/workflows/lint.yml)
-[![Go Report](https://goreportcard.com/badge/github.com/wirelessr/avroschema)](https://goreportcard.com/report/github.com/wirelessr/avroschema)
+[![workflow](https://github.com/wwarner-inf/avroschema/actions/workflows/go.yml/badge.svg)](https://github.com/wwarner-inf/avroschema/actions/workflows/go.yml)
+[![Lint](https://github.com/wwarner-inf/avroschema/actions/workflows/lint.yml/badge.svg)](https://github.com/wwarner-inf/avroschema/actions/workflows/lint.yml)
+[![Go Report](https://goreportcard.com/badge/github.com/wwarner-inf/avroschema)](https://goreportcard.com/report/github.com/wwarner-inf/avroschema)
 
 This package can be used to generate [Avro Schemas](https://avro.apache.org/docs/1.11.1/specification/) from Go types through reflection.
 
@@ -23,7 +23,7 @@ type Entity struct {
 Results in following JSON Schema:
 
 ```go
-import "github.com/wirelessr/avroschema"
+import "github.com/wwarner-inf/avroschema"
 
 avroschema.Reflect(&Entity{})
 ```
@@ -179,8 +179,8 @@ The type mappings can be customized by `Mapper`.
 
 ```go
 import (
-	"github.com/wirelessr/avroschema"
-	"github.com/wirelessr/avroschema/mongo"
+	"github.com/wwarner-inf/avroschema"
+	"github.com/wwarner-inf/avroschema/mongo"
 )
 
 reflector := new(avroschema.Reflector)

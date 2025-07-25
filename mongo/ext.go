@@ -3,7 +3,7 @@ package mongo
 import (
 	"reflect"
 
-	"github.com/wirelessr/avroschema"
+	"github.com/wwarner-inf/avroschema"
 )
 
 func MgmExtension(t reflect.Type) any {
