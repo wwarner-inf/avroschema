@@ -145,7 +145,8 @@ func (r *Reflector) reflectEx(t reflect.Type, isOpt bool, n string) []*AvroSchem
 
 	// optional field
 	if isOpt || r.BeBackwardTransitive {
-		return []*AvroSchema{{Name: n, Type: []any{"null", ret}}}
+		var nilp *struct{}
+		return []*AvroSchema{{Name: n, Type: []any{"null", ret}, Default: nilp}}
 	}
 
 	// primitive type
